@@ -4,11 +4,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Buffer
-Summary:	String::Buffer - a simple string buffer class.
-#Summary(pl):	
+Summary:	String::Buffer - a simple string buffer class
+Summary(pl):	String::Buffer - prosta klasa bufora dla ³añcuchów
 Name:		perl-String-Buffer
 Version:	0.05
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,10 +18,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-C<String::Buffer> provides a simple string buffer class.
+String::Buffer provides a simple string buffer class.
 
-# %description -l pl
-# TODO
+%description -l pl
+String::Buffer udostêpnia prost± klasê bufora dla ³añcuchów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -29,6 +29,7 @@ C<String::Buffer> provides a simple string buffer class.
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
