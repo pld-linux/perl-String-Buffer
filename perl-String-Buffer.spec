@@ -29,7 +29,7 @@ String::Buffer udostêpnia prost± klasê bufora dla ³añcuchów.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
