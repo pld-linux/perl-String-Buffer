@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	String
-%define	pnam	Buffer
+%define		pdir	String
+%define		pnam	Buffer
 Summary:	String::Buffer - a simple string buffer class
 Summary(pl):	String::Buffer - prosta klasa bufora dla ³añcuchów
 Name:		perl-String-Buffer
