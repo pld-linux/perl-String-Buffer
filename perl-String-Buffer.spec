@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	Buffer
 Summary:	String::Buffer - a simple string buffer class
-Summary(pl):	String::Buffer - prosta klasa bufora dla ³añcuchów
+Summary(pl.UTF-8):   String::Buffer - prosta klasa bufora dla Å‚aÅ„cuchÃ³w
 Name:		perl-String-Buffer
 Version:	0.05
 Release:	3
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 String::Buffer provides a simple string buffer class.
 
-%description -l pl
-String::Buffer udostêpnia prost± klasê bufora dla ³añcuchów.
+%description -l pl.UTF-8
+String::Buffer udostÄ™pnia prostÄ… klasÄ™ bufora dla Å‚aÅ„cuchÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
