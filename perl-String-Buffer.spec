@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	String
 %define		pnam	Buffer
+%include	/usr/lib/rpm/macros.perl
 Summary:	String::Buffer - a simple string buffer class
 Summary(pl.UTF-8):	String::Buffer - prosta klasa bufora dla łańcuchów
 Name:		perl-String-Buffer
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4636a5e02bbe7fea3aedcfe77e7aaa1d
+URL:		http://search.cpan.org/dist/String-Buffer/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
