@@ -4,7 +4,6 @@
 
 %define		pdir	String
 %define		pnam	Buffer
-%include	/usr/lib/rpm/macros.perl
 Summary:	String::Buffer - a simple string buffer class
 Summary(pl.UTF-8):	String::Buffer - prosta klasa bufora dla łańcuchów
 Name:		perl-String-Buffer
